@@ -14,4 +14,9 @@
         where
         name = #{name}
     </select>
+
+    <select id="selectPageByPage" resultType="com.zh.entity.User">
+        SELECT <include refid="Base_Column_List"/> FROM user WHERE age > #{age}
+    </select>
+
 </mapper>
