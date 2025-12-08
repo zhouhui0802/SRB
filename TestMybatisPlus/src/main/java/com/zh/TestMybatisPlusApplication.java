@@ -1,4 +1,4 @@
-package com.zh.testmybatisplus;
+package com.zh;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
