@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/TestMybatisPlus/pom.xml" />
         <option value="$PROJECT_DIR$/MybatisPlusMySelf/pom.xml" />
+        <option value="$PROJECT_DIR$/SRB_Parent/pom.xml" />
       </list>
     </option>
   </component>
