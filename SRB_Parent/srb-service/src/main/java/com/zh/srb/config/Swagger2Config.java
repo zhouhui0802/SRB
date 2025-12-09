@@ -31,7 +31,7 @@ public class Swagger2Config {
                 .title("尚融宝后台管理系统API文档")
                 .description("本文档描述了尚融宝后台管理系统的各个模块的接口的调用方式")
                 .version("1.6")
-                .contact(new Contact("ZH", "http://atguigu.com", "admin@atguigu.com"))
+                .contact(new Contact("ZH", "http://atguigu.com", "1741484908@qq.com"))
                 .build();
     }
 
@@ -51,7 +51,7 @@ public class Swagger2Config {
                 .title("尚融宝网站API文档")
                 .description("本文档描述了尚融宝网站各个模块的接口的调用方式")
                 .version("1.6")
-                .contact(new Contact("ZH", "http://atguigu.com", "admin@atguigu.com"))
+                .contact(new Contact("ZH", "http://atguigu.com", "1741484908@qq.com"))
                 .build();
     }
 }
