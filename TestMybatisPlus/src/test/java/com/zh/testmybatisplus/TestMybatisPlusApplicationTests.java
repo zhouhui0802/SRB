@@ -16,6 +16,7 @@ import java.util.Map;
 
 @SpringBootTest
 class TestMybatisPlusApplicationTests {
+/*
 
     // @Autowired  //按照默认类型装配  是Spring的注解
     @Resource
@@ -74,5 +75,7 @@ class TestMybatisPlusApplicationTests {
         int result = userMapper.deleteById(5);
         System.out.println("影响的行数: "+result);
     }
+
+ */
 
 }

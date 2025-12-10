@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SRB.iml" filepath="$PROJECT_DIR$/SRB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/srb-service-core.iml" filepath="$PROJECT_DIR$/srb-service-core.iml" />
     </modules>
   </component>
 </project>

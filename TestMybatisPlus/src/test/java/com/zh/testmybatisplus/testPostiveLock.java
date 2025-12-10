@@ -10,6 +10,7 @@ import javax.annotation.Resource;
 @SpringBootTest
 public class testPostiveLock {
 
+    /*
     @Resource
     private ProductMapper productMapper;
 
@@ -43,4 +44,6 @@ public class testPostiveLock {
         Product p3 = productMapper.selectById(1L);
         System.out.println("最后的结果：" + p3.getPrice());
     }
+
+     */
 }

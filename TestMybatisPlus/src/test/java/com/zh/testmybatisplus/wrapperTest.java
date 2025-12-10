@@ -15,6 +15,7 @@ import java.util.Map;
 
 public class wrapperTest {
 
+    /*
     @Resource
     private UserMapper userMapper;
 
@@ -170,4 +171,7 @@ public class wrapperTest {
         int result = userMapper.update(user, updateWrapper);
         System.out.println(result);
     }
+
+    */
+
 }

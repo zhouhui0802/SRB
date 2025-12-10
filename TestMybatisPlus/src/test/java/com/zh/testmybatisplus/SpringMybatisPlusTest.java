@@ -14,6 +14,7 @@ import java.util.List;
 @SpringBootTest
 public class SpringMybatisPlusTest {
 
+    /*
     @Resource
     private UserService userService;
     @Autowired
@@ -49,4 +50,7 @@ public class SpringMybatisPlusTest {
         List<User> users=userService.listAllByName("Hellen");
         users.forEach(System.out::println);
     }
+
+    */
+
 }

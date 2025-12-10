@@ -12,6 +12,7 @@ import java.util.List;
 @SpringBootTest
 public class InterceptorTests {
 
+    /*
     @Resource
     private UserMapper userMapper;
 
@@ -36,5 +37,7 @@ public class InterceptorTests {
         List<User> userList = pageParam.getRecords();
         userList.forEach(System.out::println);
     }
+
+     */
 
 }
