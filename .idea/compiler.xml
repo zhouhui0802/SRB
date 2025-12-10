@@ -11,6 +11,7 @@
         <module name="srb-service-core" />
         <module name="TestMybatisPlus" />
         <module name="MybatisPlusMySelf" />
+        <module name="easyexcel" />
         <module name="srb-common" />
       </profile>
     </annotationProcessing>
