@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
-    <contextName>atguiguSrb</contextName>
+    <contextName>srb</contextName>
 
     <!-- 日志的输出目录 -->
-    <property name="log.path" value="D:/project/200921/srb_log/sms" />
+    <property name="log.path" value="D:/project/sms" />
 
     <!--控制台日志格式：彩色日志-->
     <!-- magenta:洋红 -->
@@ -74,7 +74,7 @@
 
     <!-- 开发环境和测试环境 -->
     <springProfile name="dev,test">
-        <logger name="com.atguigu" level="INFO">
+        <logger name="com.zh" level="INFO">
             <appender-ref ref="CONSOLE" />
             <appender-ref ref="ROLLING_FILE" />
         </logger>
@@ -82,7 +82,7 @@
 
     <!-- 生产环境 -->
     <springProfile name="prod">
-        <logger name="com.atguigu" level="ERROR">
+        <logger name="com.zh" level="ERROR">
             <appender-ref ref="CONSOLE" />
             <appender-ref ref="FILE" />
         </logger>

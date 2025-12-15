@@ -14,6 +14,7 @@
         <module name="easyexcel" />
         <module name="srb-common" />
         <module name="srb-service-core" />
+        <module name="aliyun-oss" />
       </profile>
     </annotationProcessing>
   </component>
