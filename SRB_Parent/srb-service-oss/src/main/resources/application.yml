@@ -1,0 +1,19 @@
+server:
+  port: 8130 # 服务端口
+
+spring:
+  profiles:
+    active: dev # 环境设置
+  application:
+    name: srb-service-oss # 服务名
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 50MB
+
+aliyun:
+  oss:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    keyId: LTAI5tDEBi8uzT6tuxVzHkP7
+    keySecret: icSDxG8ZJb8B15pA1FuotkrFk26Nz5
+    bucketName: zhouhui-srb
