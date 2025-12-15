@@ -8,11 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="srb-service" />
-        <module name="srb-service-core" />
         <module name="TestMybatisPlus" />
         <module name="MybatisPlusMySelf" />
+        <module name="srb-service-sms" />
         <module name="easyexcel" />
         <module name="srb-common" />
+        <module name="srb-service-core" />
       </profile>
     </annotationProcessing>
   </component>
@@ -23,6 +24,7 @@
       <module name="srb-common" options="-parameters" />
       <module name="srb-service" options="-parameters" />
       <module name="srb-service-core" options="-parameters" />
+      <module name="srb-service-sms" options="-parameters" />
     </option>
   </component>
 </project>

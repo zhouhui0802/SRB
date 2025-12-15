@@ -27,7 +27,7 @@ public class Dict implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty(value = "id")
-      @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
     @ApiModelProperty(value = "上级id")
@@ -53,5 +53,6 @@ public class Dict implements Serializable {
     @TableLogic
     private Boolean deleted;
 
-
+    @TableField(exist = false) //表达逻辑概念的属性，和物理表没有关系，当前字段不存在于物理表中
+    private boolean hasChildren;
 }

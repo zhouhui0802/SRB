@@ -1,22 +1,18 @@
 server:
-  port: 8110 # 服务端口
+  port: 8120 # 服务端口
 
 spring:
   profiles:
     active: dev # 环境设置
   application:
-    name: srb-service-core # 服务名
-  datasource: # mysql数据库连接
-    type: com.zaxxer.hikari.HikariDataSource
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/srb?serverTimezone=GMT%2B8&characterEncoding=utf-8
-    username: root
-    password: 123456
+    name: srb-service-sms # 服务名
+
+  #spring:
   redis:
     host: 127.0.0.1
     port: 6379
     database: 0
-    #password: 123456 #默认为空
+    # password: 123456 #默认为空
     timeout: 3000ms #最大等待时间，超时则抛出异常，否则请求一直等待
     lettuce:
       pool:
@@ -25,7 +21,11 @@ spring:
         max-idle: 8     #最大空闲连接，默认8
         min-idle: 0     #最小空闲连接，默认0
 
-mybatis-plus: #mybatis
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  mapper-locations: classpath:com/zh/srb/core/mapper/xml/*.xml
+#阿里云短信
+aliyun:
+  sms:
+    region-id: cn-hangzhou
+    key-id: LTAI4G5Svnb2TWBMuKnNT6jY
+    key-secret: N7v6R4V3EJ1SGDZlsqtqo8QyVVMmtQ
+    template-code: SMS_96695065
+    sign-name: 谷粒
