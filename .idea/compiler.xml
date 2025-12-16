@@ -12,6 +12,7 @@
         <module name="MybatisPlusMySelf" />
         <module name="srb-service-sms" />
         <module name="easyexcel" />
+        <module name="jwt" />
         <module name="srb-common" />
         <module name="srb-service-core" />
         <module name="srb-service-oss" />

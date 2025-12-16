@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/SRB_Parent/pom.xml" />
         <option value="$PROJECT_DIR$/easyexcel/pom.xml" />
         <option value="$PROJECT_DIR$/aliyun-oss/pom.xml" />
+        <option value="$PROJECT_DIR$/jwt/pom.xml" />
       </list>
     </option>
   </component>
