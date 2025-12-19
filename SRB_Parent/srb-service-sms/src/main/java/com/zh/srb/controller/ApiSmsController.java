@@ -1,6 +1,7 @@
 package com.zh.srb.controller;
 
 
+import com.zh.srb.client.CoreUserInfoClient;
 import com.zh.srb.common.exception.Assert;
 import com.zh.srb.common.result.R;
 import com.zh.srb.common.result.ResponseEnum;
@@ -22,7 +23,7 @@ import java.util.concurrent.TimeUnit;
 @RestController
 @RequestMapping("/api/sms")
 @Api(tags = "短信管理")
-@CrossOrigin //跨域
+//@CrossOrigin //跨域
 @Slf4j
 
 public class ApiSmsController {
@@ -32,6 +33,9 @@ public class ApiSmsController {
 
     @Resource
     private RedisTemplate redisTemplate;
+
+    @Resource
+    private CoreUserInfoClient coreUserInfoClient;
 
     @ApiOperation("获取验证码")
     @GetMapping("/send/{mobile}")
@@ -44,10 +48,15 @@ public class ApiSmsController {
         //是否是合法的手机号码
         Assert.isTrue(RegexValidateUtils.checkCellphone(mobile), ResponseEnum.MOBILE_ERROR);
 
+        //判断手机号是否已经注册
+        boolean result = coreUserInfoClient.checkMobile(mobile);
+        log.info("result = " + result);
+        Assert.isTrue(result == false, ResponseEnum.MOBILE_EXIST_ERROR);
+
         String code = RandomUtils.getFourBitRandom();
         HashMap<String, Object> map = new HashMap<>();
         map.put("code", code);
-        smsService.send(mobile, SmsProperties.TEMPLATE_CODE, map);
+//        smsService.send(mobile, SmsProperties.TEMPLATE_CODE, map);
 
         //将验证码存入redis
         redisTemplate.opsForValue().set("srb:sms:code:" + mobile, code, 5, TimeUnit.MINUTES);

@@ -10,7 +10,14 @@
         <option value="$PROJECT_DIR$/easyexcel/pom.xml" />
         <option value="$PROJECT_DIR$/aliyun-oss/pom.xml" />
         <option value="$PROJECT_DIR$/jwt/pom.xml" />
+        <option value="$PROJECT_DIR$/SRB_Parent/srb-service-gateway/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/SRB_Parent/srb-service-gateway-01/pom.xml" />
+        <option value="$PROJECT_DIR$/SRB_Parent/untitled/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_23" project-jdk-name="1.8" project-jdk-type="JavaSDK">

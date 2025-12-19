@@ -6,6 +6,12 @@ spring:
     active: dev # 环境设置
   application:
     name: srb-service-oss # 服务名
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 # nacos服务地址
+
   servlet:
     multipart:
       max-file-size: 10MB
